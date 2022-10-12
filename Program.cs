@@ -43,7 +43,7 @@ internal class Program
         string yy = xx.ToString();
         Console.WriteLine("yy:" + yy);
 
-        string zz = 12.5f.ToString();
+        string zz = 12.5.ToString();
         Console.WriteLine("zz:" + zz);
 
         //**System.Convert
@@ -73,9 +73,13 @@ internal class Program
        string metin2 = "10.25";
        int rakam1;
        double rakam2;
-       rakam1 = Int32.Parse(metin1); //parse string dönüştürmek için kullanılır ve sadece string alır
+       rakam1 = Int32.Parse(metin1); //parse string dönüştürmek için kullanılır ve sadece string alır string -> int
        rakam2 = Double.Parse(metin2);
        Console.WriteLine(rakam1);
        Console.WriteLine(metin2);
+       string dee = "55";
+       byte xxx = Convert.ToByte(dee);
+       Console.WriteLine(xxx);
+       
     }
 }
